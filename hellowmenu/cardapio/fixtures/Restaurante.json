@@ -1,0 +1,152 @@
+[
+  {
+    "model": "cardapio.Restaurante",
+    "pk": 1,
+    "fields": {
+      "nome_restaurante": "Bistro Gourmet",
+      "nome_proprietario": "Carlos Silva",
+      "numero_Proprietario": "1198765432",
+      "numero_contato": "1132456789",
+      "rua": "Rua das Flores",
+      "numero": "123",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "cep": "01001-000"
+    }
+  },
+  {
+    "model": "cardapio.Restaurante",
+    "pk": 2,
+    "fields": {
+      "nome_restaurante": "Café Paris",
+      "nome_proprietario": "Marie Curie",
+      "numero_Proprietario": "1198765433",
+      "numero_contato": "1132456790",
+      "rua": "Avenida Paulista",
+      "numero": "1010",
+      "bairro": "Bela Vista",
+      "cidade": "São Paulo",
+      "cep": "01310-100"
+    }
+  },
+  {
+    "model": "cardapio.Restaurante",
+    "pk": 3,
+    "fields": {
+      "nome_restaurante": "Steak House Premium",
+      "nome_proprietario": "John Beef",
+      "numero_Proprietario": "1198765434",
+      "numero_contato": "1132456791",
+      "rua": "Rua Augusta",
+      "numero": "500",
+      "bairro": "Consolação",
+      "cidade": "São Paulo",
+      "cep": "01304-000"
+    }
+  },
+  {
+    "model": "cardapio.Restaurante",
+    "pk": 4,
+    "fields": {
+      "nome_restaurante": "Sushi Nippon",
+      "nome_proprietario": "Takashi Mori",
+      "numero_Proprietario": "1198765435",
+      "numero_contato": "1132456792",
+      "rua": "Rua Liberdade",
+      "numero": "250",
+      "bairro": "Liberdade",
+      "cidade": "São Paulo",
+      "cep": "01502-000"
+    }
+  },
+  {
+    "model": "cardapio.Restaurante",
+    "pk": 5,
+    "fields": {
+      "nome_restaurante": "Pizzaria Dolce Vita",
+      "nome_proprietario": "Luigi Bianchi",
+      "numero_Proprietario": "1198765436",
+      "numero_contato": "1132456793",
+      "rua": "Rua dos Pinheiros",
+      "numero": "400",
+      "bairro": "Pinheiros",
+      "cidade": "São Paulo",
+      "cep": "05422-000"
+    }
+  },
+  {
+    "model": "cardapio.Restaurante",
+    "pk": 6,
+    "fields": {
+      "nome_restaurante": "Vegan Bliss",
+      "nome_proprietario": "Clara Greens",
+      "numero_Proprietario": "1198765437",
+      "numero_contato": "1132456794",
+      "rua": "Rua Harmonia",
+      "numero": "1000",
+      "bairro": "Vila Madalena",
+      "cidade": "São Paulo",
+      "cep": "05435-002"
+    }
+  },
+  {
+    "model": "cardapio.Restaurante",
+    "pk": 7,
+    "fields": {
+      "nome_restaurante": "Tacos y Nachos",
+      "nome_proprietario": "Miguel Rivera",
+      "numero_Proprietario": "1198765438",
+      "numero_contato": "1132456795",
+      "rua": "Avenida Faria Lima",
+      "numero": "200",
+      "bairro": "Jardim Paulistano",
+      "cidade": "São Paulo",
+      "cep": "01452-000"
+    }
+  },
+  {
+    "model": "cardapio.Restaurante",
+    "pk": 8,
+    "fields": {
+      "nome_restaurante": "Curry Corner",
+      "nome_proprietario": "Anita Desai",
+      "numero_Proprietario": "1198765439",
+      "numero_contato": "1132456796",
+      "rua": "Alameda Santos",
+      "numero": "700",
+      "bairro": "Jardim Paulista",
+      "cidade": "São Paulo",
+      "cep": "01418-100"
+    }
+  },
+  {
+    "model": "cardapio.Restaurante",
+    "pk": 9,
+    "fields": {
+      "nome_restaurante": "Seafood Paradise",
+      "nome_proprietario": "Alice Waters",
+      "numero_Proprietario": "1198765440",
+      "numero_contato": "1132456797",
+      "rua": "Rua Oscar Freire",
+      "numero": "800",
+      "bairro": "Cerqueira César",
+      "cidade": "São Paulo",
+      "cep": "01426-001"
+    }
+  },
+  {
+    "model": "cardapio.Restaurante",
+    "pk": 10,
+    "fields": {
+      "nome_restaurante": "The Burger Joint",
+      "nome_proprietario": "Bob Belcher",
+      "numero_Proprietario": "1198765441",
+      "numero_contato": "1132456798",
+      "rua": "Rua Haddock Lobo",
+      "numero": "900",
+      "bairro": "Cerqueira César",
+      "cidade": "São Paulo",
+      "cep": "01414-000"
+    }
+  }
+]

@@ -1,0 +1,55 @@
+{% load static %}
+<div class="container-mensagens" id="container-mensagens">
+
+</div>
+
+<a class="botao-carrinho hidden" onclick="cardapio.metodos.abrirCarrinho(true)">
+    <div class="badge-total-carrinho">0</div>
+    <i class="fa fa-shopping-bag"></i>
+</a>
+
+<div class="container-mensagens" id="container-mensagens">
+
+</div>
+<section class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
+            <a class="navbar-brand wow fadeIn" href="#">
+                <img src="./static/img/logo.png" width="160" class="img-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto mr-auto wow fadeIn">
+                    <li class="nav-item">
+                        <a href="#reservas" class="nav-link"><b>Reservas</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#servicos" class="nav-link"><b>Serviços</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cardapio" class="nav-link"><b>Cardápio</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#depoimentos" class="nav-link"><b>Depoimentos</b></a>
+                    </li>
+                    {% if user.is_authenticated %}
+                    <a href="" class="btn btn-primary">Minha Conta</a>
+                    {% else %}
+                    <a href="{% url 'login' %}" class="btn btn-primary">Entrar</a>
+                    {% endif %}
+                </ul>
+                <a class="btn btn-white btn-icon wow fadeIn" onclick="cardapio.metodos.abrirCarrinho(true)">
+                    Meu carrinho <span class="icon">
+                        <div class="container-total-carrinho badge-total-carrinho hidden">0</div>
+                        <i class="fa fa-shopping-bag"></i>
+                    </span>
+                </a>
+            </div>
+                
+        </nav>
+    </div>
+</section>

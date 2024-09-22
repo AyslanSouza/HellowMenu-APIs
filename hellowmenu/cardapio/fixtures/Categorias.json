@@ -1,0 +1,44 @@
+[
+  {
+    "model": "cardapio.Categoria",
+    "pk": 1,
+    "fields": {
+      "nome": "churrasco"
+    }
+  },
+  {
+    "model": "cardapio.Categoria",
+    "pk": 2,
+    "fields": {
+      "nome": "burgers"
+    }
+  },
+  {
+    "model": "cardapio.Categoria",
+    "pk": 3,
+    "fields": {
+      "nome": "sobremesas"
+    }
+  },
+  {
+    "model": "cardapio.Categoria",
+    "pk": 4,
+    "fields": {
+      "nome": "bebidas"
+    }
+  },
+  {
+    "model": "cardapio.Categoria",
+    "pk": 5,
+    "fields": {
+      "nome": "pizzas"
+    }
+  },
+  {
+    "model": "cardapio.Categoria",
+    "pk": 6,
+    "fields": {
+      "nome": "steaks"
+    }
+  }
+]
