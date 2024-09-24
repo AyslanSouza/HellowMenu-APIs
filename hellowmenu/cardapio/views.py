@@ -63,10 +63,10 @@ class UserUpdateView(LoginRequiredMixin, generic.UpdateView):
     success_url = reverse_lazy('minha_conta')
 
 
-@api_view(['GET'])
-def get_users(request):
+@api_view(['GET', 'POST'])
+def user_list(request):
     if request.method == 'GET':
-        # Se um ID for passado como parâmetro de consulta
+        # Listar usuários
         user_id = request.GET.get('id')
         if user_id:
             try:
@@ -80,10 +80,8 @@ def get_users(request):
             serializer = UserSerializer(users, many=True)
             return Response(serializer.data)
 
-
-@api_view(['POST'])
-def create_user(request):
-    if request.method == 'POST':
+    elif request.method == 'POST':
+        # Criar novo usuário
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
@@ -91,13 +89,15 @@ def create_user(request):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-
-@api_view(['PUT'])
-def update_user(request, id):
+@api_view(['PUT', 'DELETE'])
+def user_manage(request, id):
+    """
+    Update or delete an existing user.
+    """
     try:
         user = User.objects.get(pk=id)
     except User.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
+        return Response({"detail": "User not found."}, status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'PUT':
         serializer = UserSerializer(user, data=request.data)
@@ -106,17 +106,6 @@ def update_user(request, id):
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
-
-@api_view(['DELETE'])
-def delete_user(request, id):
-    try:
-        user = User.objects.get(pk=id)
-    except User.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
-
-    if request.method == 'DELETE':
+    elif request.method == 'DELETE':
         user.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
-        
