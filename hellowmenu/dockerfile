@@ -1,0 +1,21 @@
+# Use a imagem oficial do Python como base
+FROM python:3.9
+
+# Defina o diretório de trabalho
+WORKDIR /app
+
+# Copie os arquivos de requisitos para o contêiner
+COPY requirements.txt /app/
+
+RUN pip install django Pillow django-crispy-forms crispy-bootstrap5 psycopg2-binary
+# Instale as dependências
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copie o restante do código do aplicativo para o contêiner
+COPY . /app/
+
+# Exponha a porta em que o Django será executado
+EXPOSE 8000
+
+# Comando para iniciar o servidor Django
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
