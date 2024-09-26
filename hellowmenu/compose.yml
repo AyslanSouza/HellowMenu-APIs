@@ -1,22 +1,24 @@
 version: '3.8'
 
+volumes:
+  postgres_data: { }
+
 services:
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: /bin/sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     volumes:
         - .:/app
-    ports:
+    ports:  
         - "8000:8000"
     depends_on:
         - db
     # environment:
-    #     DATABASE_URL: postgres://admin:admin@db/webdb
-    #     PYTHONUNBUFFERED: 1
+    #    DATABASE_URL: postgres://admin:admin@db/webdb
+    #    PYTHONUNBUFFERED: 1
     
   db:
-    image: postgres:13
-    restart: always
+    image: postgres:latest
     environment:
         POSTGRES_DB: webdb
         POSTGRES_USER: admin
@@ -25,6 +27,3 @@ services:
         - 5432:5432
     volumes:
        - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  postgres_data:
