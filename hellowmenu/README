@@ -1,0 +1,5 @@
+Baixar a imagem: Executar o comando docker pull ayslansouza/hellowmenu:latest para baixar a imagem do Docker Hub.
+
+Rodar a imagem: Utilizar docker run para criar e iniciar um contêiner a partir da imagem, como por exemplo:
+
+docker run -d ayslansouza/hellowmenu:latest
