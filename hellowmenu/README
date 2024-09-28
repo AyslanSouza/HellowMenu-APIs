@@ -1,5 +1,6 @@
-Baixar a imagem: Executar o comando docker pull ayslansouza/hellowmenu:latest para baixar a imagem do Docker Hub.
+Link dockerhub Ayslan: https://hub.docker.com/repository/docker/ayslansouza/hellowmenu/general
 
-Rodar a imagem: Utilizar docker run para criar e iniciar um contêiner a partir da imagem, como por exemplo:
+Link dockerhub Miguel: https://hub.docker.com/repository/docker/mguell/e1docker/general
 
-docker run -d ayslansouza/hellowmenu:latest
+Link GitHub Ayslan(Repositorio Original): https://github.com/AyslanSouza/HellowMenu-APIs
+
